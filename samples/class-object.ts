@@ -57,3 +57,12 @@ car.getData('red', 4, 'alto', 'gas');
 car.getData('red', 4, 'alto');
 
 console.log(car.color);
+
+
+
+// let val = <HTMLElement>document.getElementById('div');
+// console.log(val.innerHTML);
+
+
+// let txt = (<HTMLInputElement>document.getElementById('txt')).value;
+// console.log(txt);
