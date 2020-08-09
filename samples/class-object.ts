@@ -29,7 +29,7 @@ class Car {
         this.brand = carData.brand;
     }
 
-    getData(data: CarConfiguration) {
+    getData(clr: string, door: number, brandType: string ='Benz', fuel?: string) {
 
     }
 
@@ -41,10 +41,8 @@ let car = new Car({
     "brand": "BMW"
 });
 
-car.getData({
-    "color": 'white',
-    "noOfDoor": 2,
-    "brand": "BMW"
-});
+car.getData('red', 4, 'alto', 'gas');
+
+car.getData('red', 4, 'alto');
 
 console.log(car.color);
