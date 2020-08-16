@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col">
+                <form id="form">
+                    <div class="form-group">
+                        <label for="name">Car name</label>
+                        <input id="name" class="form-control" type="text" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="doors">No of doors</label>
+                        <select name="doors" id="doors" class="custom-select">
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="engine-no">Car Engine Number</label>
+                        <input id="engine-no" class="form-control" type="text" name="engine-no">
+                    </div>
+                    <div class="form-group">
+                        <label for="engine-cc">Car Engine CC</label>
+                        <input id="engine-cc" class="form-control" type="text" name="engine-cc">
+                    </div>
+                    <div class="form-group">
+                        <label for="air">Air Conditioned</label>
+                        <select name="air" id="air" class="custom-select">
+                            <option value="YES">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="color">Car Color</label>
+                        <select name="color" id="color" class="custom-select">
+                            <option value="RED">Red</option>
+                            <option value="WHITE">White</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="btn">Submit Data</button>
+                </form>
+
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+
+</html>
+<!-- "color": 'white',
+    "noOfDoor": "2",
+    "brand": "BMW",
+    "engineCC": "1000",
+    "engineNo": "6546315651",
+    "airCondition": "Y" -->

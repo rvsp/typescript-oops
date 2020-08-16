@@ -1,1 +1,1 @@
-# Typescript-OOP's
+# Typescript OOPs
