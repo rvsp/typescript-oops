@@ -67,6 +67,16 @@ module.exports = {
 };
 ```
 
+add the below `script` into your `package.json`
+
+```json
+"scripts": {
+    "build": "webpack",
+    "dev-build": "webpack --watch",
+    "serve": "webpack-dev-server"
+}
+```
+
 ---
 
 To run the `webpack-dev-server` use the below command
