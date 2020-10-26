@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "dev-build": "webpack --watch",
-    "serve": "webpack-dev-server"
+    "serve": "webpack serve"
   },
   "author": "",
   "license": "ISC",
