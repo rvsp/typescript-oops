@@ -72,7 +72,7 @@ add the below `script` into your `package.json`
 ```json
 "scripts": {
     "build": "webpack",
-    "serve": "webpack server"
+    "serve": "webpack serve"
 }
 ```
 
