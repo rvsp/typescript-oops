@@ -1,2 +1,4 @@
 .vscode
 works
+node_modules
+test
