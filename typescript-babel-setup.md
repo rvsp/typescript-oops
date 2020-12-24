@@ -8,7 +8,7 @@ To create `typescript` configuration file
     tsc --init
 ```
 
-Inside `tsconfig.json` file uncomment the `"noEmit": true` to check with use of types with transpiling `ts to `js`
+Inside `tsconfig.json` file uncomment the `"noEmit": true` to allow babel to transform files.
 
 ---
 
