@@ -43,6 +43,40 @@ create a babel config file named as `.babelrc` and paste the below lines.
 }
 ```
 
+---
+
+create a webpack config file named as `webpack.config.js` and paste the below lines.
+
+```js
+const path = require("path");
+module.exports = {
+  entry: "./src/index.ts",
+
+  module: {
+    rules: [
+      {
+        test: /\.(ts|js)x?$/,
+        exclude: /node_modules/,
+        include: [path.resolve(__dirname, "src")],
+        use: {
+          loader: "babel-loader",
+        },
+      },
+    ],
+  },
+  output: {
+    publicPath: "public",
+    path: path.join(__dirname, "public"),
+    filename: "bundle.js",
+  },
+  resolve: {
+    extensions: [".ts", ".tsx", ".js"],
+  },
+};
+```
+
+---
+
 Add the below `script` into your `package.json`
 
 ```json
