@@ -25,7 +25,7 @@ To create `package.json` file
 To setup babel and it's cli install the following npm dependencies into your project folder
 
 ```
-    npm install -D @babel/cli @babel/cli
+    npm install -D @babel/cli @babel/core
 ```
 
 ```
