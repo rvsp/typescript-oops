@@ -2,16 +2,6 @@
 
 ---
 
-To create `typescript` configuration file
-
-```
-    tsc --init
-```
-
-Inside `tsconfig.json` file uncomment the `"noEmit": true` to allow babel to transform files.
-
----
-
 To create `package.json` file
 
 ```
@@ -22,15 +12,24 @@ To create `package.json` file
 
 ---
 
+To create `typescript` configuration file
+
+```
+    tsc --init
+```
+
+Inside `tsconfig.json` file uncomment the `"noEmit": true` to allow babel to transform files.
+
+---
+
 To setup babel and it's cli install the following npm dependencies into your project folder
 
 ```
-    npm install -D @babel/cli @babel/core
-```
-
-```
-    npm i -D @babel/preset-typescript @babel/preset-env
-    npm i -D typescript
+    npm install @babel/cli @babel/core --save-dev
+    npm install @babel/preset-typescript @babel/preset-env --save-dev
+    npm install typescript --save-dev
+    npm install babel-loader --save-dev
+    npm install webpack webpack-cli@3.3.12 webpack-dev-server --save-dev
 ```
 
 ---
@@ -40,10 +39,7 @@ create a babel config file named as `.babelrc` and paste the below lines.
 ```json
 {
   "presets": ["@babel/preset-typescript", "@babel/preset-env"],
-  "plugins": [
-    "@babel/proposal-class-properties",
-    "@babel/proposal-object-rest-spread"
-  ]
+  "plugins": ["@babel/proposal-class-properties"]
 }
 ```
 
@@ -51,14 +47,32 @@ Add the below `script` into your `package.json`
 
 ```json
 "scripts": {
-    "build": "babel src --out-dir dist --extensions \".ts,.tsx\" --copy-files",
+    "bundle": "webpack",
+    "build": "webpack --mode production",
+    "serve": "webpack-dev-server --mode development --open",
     "tsc": "tsc"
 }
 ```
 
 ---
 
-To run the `babel` use the below command
+To check typescript types run the below command
+
+```
+    npm run tsc
+```
+
+---
+
+To see instant live changes use the below command
+
+```
+    npm run serve
+```
+
+---
+
+To create bundled file use the below command
 
 ```
     npm run build
