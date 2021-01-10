@@ -25,7 +25,7 @@ Inside `tsconfig.json` file uncomment the `"noEmit": true` to allow babel to tra
 To setup babel and it's cli install the following npm dependencies into your project folder
 
 ```
-    npm install @babel/cli @babel/core --save-dev
+    npm install @babel/core --save-dev
     npm install @babel/preset-typescript @babel/preset-env --save-dev
     npm install typescript --save-dev
     npm install babel-loader --save-dev
