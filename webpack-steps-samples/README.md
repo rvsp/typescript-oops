@@ -29,13 +29,13 @@ To create `package.json` file
 To install `webpack, webpack-cli` in global
 
 ```
-    npm install webpack webpack-cli -g
+    npm install webpack webpack-cli@3.3.12 -g
 ```
 
 To install the following packages in current directory
 
 ```
-    npm install webpack webpack-cli ts-loader typescript webpack-dev-server --save-dev
+    npm install webpack webpack-cli@3.3.12 ts-loader typescript webpack-dev-server --save-dev
 ```
 
 ---
